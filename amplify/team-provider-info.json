@@ -1,0 +1,23 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-contactcontractor-staging-185828-authRole",
+      "UnauthRoleArn": "arn:aws:iam::884895427475:role/amplify-contactcontractor-staging-185828-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::884895427475:role/amplify-contactcontractor-staging-185828-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-contactcontractor-staging-185828-deployment",
+      "UnauthRoleName": "amplify-contactcontractor-staging-185828-unauthRole",
+      "StackName": "amplify-contactcontractor-staging-185828",
+      "StackId": "arn:aws:cloudformation:us-east-1:884895427475:stack/amplify-contactcontractor-staging-185828/543f8870-edfe-11ee-ab73-1212ea714eeb",
+      "AmplifyAppId": "d28jycgybw9s18"
+    },
+    "categories": {
+      "auth": {
+        "contactContractor": {}
+      },
+      "storage": {
+        "s3contactcontractorstorage5b7a86e7": {}
+      }
+    }
+  }
+}

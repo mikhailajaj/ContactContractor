@@ -1,0 +1,205 @@
+# this is an auto generated file. This will be overwritten
+
+subscription OnCreateChatRoom($filter: ModelSubscriptionChatRoomFilterInput) {
+  onCreateChatRoom(filter: $filter) {
+    id
+    memberIds
+    lastMessage {
+      body
+      datetime
+      projectId
+      __typename
+    }
+    messages {
+      nextToken
+      __typename
+    }
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnUpdateChatRoom($filter: ModelSubscriptionChatRoomFilterInput) {
+  onUpdateChatRoom(filter: $filter) {
+    id
+    memberIds
+    lastMessage {
+      body
+      datetime
+      projectId
+      __typename
+    }
+    messages {
+      nextToken
+      __typename
+    }
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnDeleteChatRoom($filter: ModelSubscriptionChatRoomFilterInput) {
+  onDeleteChatRoom(filter: $filter) {
+    id
+    memberIds
+    lastMessage {
+      body
+      datetime
+      projectId
+      __typename
+    }
+    messages {
+      nextToken
+      __typename
+    }
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnCreateMessage($filter: ModelSubscriptionMessageFilterInput) {
+  onCreateMessage(filter: $filter) {
+    id
+    body
+    dateTime
+    sender {
+      id
+      useramen
+      createdAt
+      updatedAt
+      __typename
+    }
+    chatroomID
+    createdAt
+    updatedAt
+    messageSenderId
+    __typename
+  }
+}
+
+subscription OnUpdateMessage($filter: ModelSubscriptionMessageFilterInput) {
+  onUpdateMessage(filter: $filter) {
+    id
+    body
+    dateTime
+    sender {
+      id
+      useramen
+      createdAt
+      updatedAt
+      __typename
+    }
+    chatroomID
+    createdAt
+    updatedAt
+    messageSenderId
+    __typename
+  }
+}
+
+subscription OnDeleteMessage($filter: ModelSubscriptionMessageFilterInput) {
+  onDeleteMessage(filter: $filter) {
+    id
+    body
+    dateTime
+    sender {
+      id
+      useramen
+      createdAt
+      updatedAt
+      __typename
+    }
+    chatroomID
+    createdAt
+    updatedAt
+    messageSenderId
+    __typename
+  }
+}
+
+subscription OnCreateProject($filter: ModelSubscriptionProjectFilterInput) {
+  onCreateProject(filter: $filter) {
+    id
+    name
+    imageKey
+    description
+    userId
+    imageKeys {
+      imageKey
+      projectId
+      __typename
+    }
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnUpdateProject($filter: ModelSubscriptionProjectFilterInput) {
+  onUpdateProject(filter: $filter) {
+    id
+    name
+    imageKey
+    description
+    userId
+    imageKeys {
+      imageKey
+      projectId
+      __typename
+    }
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnDeleteProject($filter: ModelSubscriptionProjectFilterInput) {
+  onDeleteProject(filter: $filter) {
+    id
+    name
+    imageKey
+    description
+    userId
+    imageKeys {
+      imageKey
+      projectId
+      __typename
+    }
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnCreateUser($filter: ModelSubscriptionUserFilterInput) {
+  onCreateUser(filter: $filter) {
+    id
+    useramen
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnUpdateUser($filter: ModelSubscriptionUserFilterInput) {
+  onUpdateUser(filter: $filter) {
+    id
+    useramen
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnDeleteUser($filter: ModelSubscriptionUserFilterInput) {
+  onDeleteUser(filter: $filter) {
+    id
+    useramen
+    createdAt
+    updatedAt
+    __typename
+  }
+}

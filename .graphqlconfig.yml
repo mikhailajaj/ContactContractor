@@ -1,0 +1,19 @@
+projects:
+  contactContractor:
+    schemaPath: amplify/backend/api/contactContractor/build/schema.graphql
+    includes:
+      - contactContractor
+    excludes:
+      - ./amplify/**
+      - API.swift
+    extensions:
+      amplify:
+        codeGenTarget: swift
+        generatedFileName: API.swift
+        docsFilePath: .
+        region: us-east-1
+        apiId: null
+        maxDepth: 2
+extensions:
+  amplify:
+    version: 3

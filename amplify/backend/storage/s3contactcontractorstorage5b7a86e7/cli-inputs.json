@@ -1,0 +1,14 @@
+{
+  "resourceName": "s3contactcontractorstorage5b7a86e7",
+  "bucketName": "contactcontractor-storage-5b7a86e7",
+  "policyUUID": "38829211",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ]
+}

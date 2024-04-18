@@ -1,0 +1,176 @@
+# this is an auto generated file. This will be overwritten
+
+query GetChatRoom($id: ID!) {
+  getChatRoom(id: $id) {
+    id
+    memberIds
+    lastMessage {
+      body
+      datetime
+      projectId
+      __typename
+    }
+    messages {
+      nextToken
+      __typename
+    }
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+query ListChatRooms(
+  $filter: ModelChatRoomFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listChatRooms(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      memberIds
+      createdAt
+      updatedAt
+      __typename
+    }
+    nextToken
+    __typename
+  }
+}
+
+query GetMessage($id: ID!) {
+  getMessage(id: $id) {
+    id
+    body
+    dateTime
+    sender {
+      id
+      useramen
+      createdAt
+      updatedAt
+      __typename
+    }
+    chatroomID
+    createdAt
+    updatedAt
+    messageSenderId
+    __typename
+  }
+}
+
+query ListMessages(
+  $filter: ModelMessageFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listMessages(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      body
+      dateTime
+      chatroomID
+      createdAt
+      updatedAt
+      messageSenderId
+      __typename
+    }
+    nextToken
+    __typename
+  }
+}
+
+query MessagesByChatroomID(
+  $chatroomID: ID!
+  $sortDirection: ModelSortDirection
+  $filter: ModelMessageFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  messagesByChatroomID(
+    chatroomID: $chatroomID
+    sortDirection: $sortDirection
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+  ) {
+    items {
+      id
+      body
+      dateTime
+      chatroomID
+      createdAt
+      updatedAt
+      messageSenderId
+      __typename
+    }
+    nextToken
+    __typename
+  }
+}
+
+query GetProject($id: ID!) {
+  getProject(id: $id) {
+    id
+    name
+    imageKey
+    description
+    userId
+    imageKeys {
+      imageKey
+      projectId
+      __typename
+    }
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+query ListProjects(
+  $filter: ModelProjectFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listProjects(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      name
+      imageKey
+      description
+      userId
+      createdAt
+      updatedAt
+      __typename
+    }
+    nextToken
+    __typename
+  }
+}
+
+query GetUser($id: ID!) {
+  getUser(id: $id) {
+    id
+    useramen
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+query ListUsers(
+  $filter: ModelUserFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listUsers(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      useramen
+      createdAt
+      updatedAt
+      __typename
+    }
+    nextToken
+    __typename
+  }
+}
